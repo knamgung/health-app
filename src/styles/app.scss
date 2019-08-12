@@ -1,0 +1,141 @@
+* {
+  font-family: Montserrat;
+}
+
+body {
+  background-color: #363438;
+  color: white;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 5em;
+
+  &-sex {
+    margin: 0;
+    width: 10em;
+  }
+
+  &-title {
+    font-size: 5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  &__form {
+    display: flex;
+    flex-flow: column;
+    margin-top: 3em;
+
+    padding: 1.5em 2.5em 1.5em 2.5em;
+    border-radius: 2.5em;
+    width: 35%;
+  }
+
+  &-sub {
+    color: #f9c2c2;
+    font-size: 1em;
+  }
+
+  &__nameSex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+input,
+select {
+  height: 3em;
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-radius: 5em;
+
+  &:focus {
+    border: none;
+  }
+}
+
+select {
+  margin-top: 1em;
+  padding: 0;
+}
+button {
+  width: 100%;
+  height: 5em;
+  background-color: #f9c2c2;
+  color: white;
+  border-radius: 5em;
+  margin-top: 2em;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: #363438;
+    cursor: grab;
+  }
+}
+
+.age,
+.sex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.sex select {
+  width: 100%;
+}
+
+.result {
+  background-color: #f9c2c2;
+  width: 15em;
+  color: black;
+  height: 20em;
+  padding: 1em;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.25);
+    border-radius: 2%;
+  }
+}
+
+.percentage {
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  color: #f9c2c2;
+}
+
+.res {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.age-cont {
+  width: 80%;
+}
+
+.issue {
+  font-size: 0.85em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  color: white;
+}
+
+.stats {
+  background-color: #363438;
+  border-radius: 5em;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+.result-advise {
+  color: red;
+}
